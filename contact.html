@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<div class="topnav" id="myTopnav" style="text-align: center">
+    <a href="index.html">[Personal Info]</a>
+    <a href="gallery.html">[Picture Gallery]</a>
+    <a href="contact.html">[Contact Me]</a>
+    <a href="hobbies.html">[My Hobbies]</a>
+    <a href="family.html">[Family Tree]</a>
+    <a href="hometown.html">[Hometown]</a>
+    <a href="social.html">[Soial Media]</a>
+    <a href="registration.html">[Registration Form]</a>
+</div>
+<div id="main" style="text-align: center">
+    <form id="contact_form">
+        <div class="row">
+            <label for="name">Your name:</label><br/>
+            <input id="name" class="input" name="name" type="text" value="" size="48"/><br/>
+        </div>
+        <div class="row">
+            <label for="email">Your email:</label><br/>
+            <input id="email" class="input" name="email" type="text" value="" size="48"/><br/>
+        </div>
+        <div class="row">
+            <label for="message">Your message:</label><br/>
+            <textarea id="message" class="input" name="message" rows="4" cols="50"></textarea><br/>
+        </div>
+        <input type="submit" onclick="alert('Email sent.')">
+    </form>
+</div>
+</body>
+</html>
