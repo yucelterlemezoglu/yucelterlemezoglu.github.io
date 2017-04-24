@@ -28,27 +28,30 @@
         <form>
             <fieldset>
                 <legend><b>Personal Information</b></legend>
-                <img src="assets/img/form/user.jpg" class="img-rounded" alt="User Picture"
-                     style="width:100px;height:100px;"><br>
-                <form method="POST" action="uploadFile" enctype="multipart/form-data">
-                    <strong>Upload file:</strong>
-                    <input type="file" name="file"/>
-                </form>
-                <br>
-                <form>
-                    <div class="form-group">
-                        <label for="firstName">First Name:</label>
-                        <input type="text" class="form-control" id="firstName">
-                    </div>
-                    <div class="form-group">
-                        <label for="middleName">Middle Name:</label>
-                        <input type="text" class="form-control" id="middleName">
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" class="form-control" id="lastName">
-                    </div>
-                </form>
+                <div>
+                    <img src="assets/img/form/user.jpg" class="img-rounded" alt="User Picture"
+                         style="width:100px;height:100px;"><br>
+                    <span class="btn btn-default btn-file">
+                        <strong>Upload file:</strong>
+                        <input type="file">
+                    </span>
+                </div>
+                <div>
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="middleName">Middle Name:</label>
+                            <input type="text" class="form-control" id="middleName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                    </form>
+                </div>
                 <div class="radio">
                     <p><b>Gender:</b></p>
                     <form>
@@ -63,12 +66,15 @@
                         </label> Other
                     </form>
                 </div>
-
-
-
-                <label><b>Date of Birthday: </b></label><br><input type="date" name="dateBirthday"> <br>
-
-
+                <div>
+                    <label><b>Date of Birthday: </b></label>
+                    <div class="input-group date" data-provide="datepicker">
+                        <input type="text" class="form-control">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                </div>
                 <div class="form-group">
                     <label for="sel1"><b>City:</b></label>
                     <select class="form-control" id="sel1">
@@ -220,5 +226,22 @@
         </form>
     </div>
 </div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script>
+    $('.datepicker').datepicker({
+        format: "dd/mm/yy",
+        weekStart: 1,
+        clearBtn: true,
+        autoclose: true,
+        todayHighlight: true,
+        beforeShowYear: function (date) {
+            if (date.getFullYear() == 2007) {
+                return false;
+            }
+        }
+    });
+</script>
 </body>
 </html>
