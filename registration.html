@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registration Form</title>
-    <meta charset="utf-8">
+    <title>Personal Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-<div class="topnav" id="myTopnav" style="text-align: center">
-    <a href="index.html">[Personal Info]</a>
-    <a href="gallery.html">[Picture Gallery]</a>
-    <a href="contact.html">[Contact Me]</a>
-    <a href="hobbies.html">[My Hobbies]</a>
-    <a href="family.html">[Family Tree]</a>
-    <a href="hometown.html">[Hometown]</a>
-    <a href="social.html">[Soial Media]</a>
-    <a href="registration.html">[Registration Form]</a>
-</div>
-<div id="main">
-    <form>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Yücel Terlemezoğlu</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Personal Info</a></li>
+            <li><a href="gallery.html">Picture Gallery</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="hobbies.html">My Hobbies</a></li>
+            <li><a href="family.html">Family Tree</a></li>
+            <li><a href="hometown.html">Hometown</a></li>
+            <li><a href="social.html">Soial Media</a></li>
+            <li class="active"><a href="registration.html">Registration Form</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <form class="well" action=" " method="post">
         <fieldset>
             <legend><b>Personal Information</b></legend>
             <img src="assets/img/form/user.jpg" alt="User Picture" style="width:100px;height:100px;"><br>
@@ -29,12 +37,15 @@
             <label><b>Middle Name: </b></label><input type="text" name="middleName"> <br>
             <label><b>Last Name: </b></label><input type="text" name="lastName"> <br>
             <label><b>Gender: </b></label>
+            <label class="radio-inline"><input type="radio" name="male">Male</label>
+            <label class="radio-inline"><input type="radio" name="female">Female</label>
+            <label class="radio-inline"><input type="radio" name="other">Other</label>
             <input type="radio" name="gender" value="male" checked> Male
             <input type="radio" name="gender" value="female"> Female
             <input type="radio" name="gender" value="other"> Other<br>
             <label><b>Date of Birthday: </b></label><input type="date" name="dateBirthday"> <br>
             <label><b>City: </b></label>
-            <select>
+            <select class="checkbox"><b>City: </b>
                 <option value="adana">Adana</option>
                 <option value="adıyaman">Adıyaman</option>
                 <option value="afyonkarahisar">Afyonkarahisar</option>
@@ -117,10 +128,13 @@
                 <option value="osmaniye">Osmaniye</option>
                 <option value="düzce">Düzce</option>
             </select><br>
-            <label><b>About me: </b></label><br>
-            <textarea rows="4" cols="50" placeholder="Text here."></textarea>
+            <div class="form-group">
+                <label for="aboutme">About me:</label>
+                <textarea class="form-control" rows="5" id="aboutme"></textarea>
+            </div>
         </fieldset>
-        <br>
+    </form>
+    <form class="well" action=" " method="post">
         <fieldset>
             <legend><b>Interest</b></legend>
             <input type="checkbox" name="interest"> Travel
@@ -134,12 +148,21 @@
             <input type="checkbox" name="interest"> Tinkering with Technology
             <input type="checkbox" name="interest"> Sewing
         </fieldset>
-        <br>
-        <fieldset>
-            <legend><b>Account Information</b></legend>
-            <label><b>E-mail: </b></label><input type="e-mail" name="eMail"> <br>
-            <label><b>Password: </b></label><input type="password" name="password"> <br>
-        </fieldset>
+    </form>
+    <form class="well" action=" " method="post">
+        <div class="input-group">
+            <fieldset>
+                <legend><b>Account Information</b></legend>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+            </fieldset>
+        </div>
         <br>
         <input type="submit" onclick="alert('Thanks for registration')">
     </form>

@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Family Tree</title>
-    <meta charset="utf-8">
+    <title>Personal Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-<div class="topnav" id="myTopnav" style="text-align: center">
-    <a href="index.html">[Personal Info]</a>
-    <a href="gallery.html">[Picture Gallery]</a>
-    <a href="contact.html">[Contact Me]</a>
-    <a href="hobbies.html">[My Hobbies]</a>
-    <a href="family.html">[Family Tree]</a>
-    <a href="hometown.html">[Hometown]</a>
-    <a href="social.html">[Soial Media]</a>
-    <a href="registration.html">[Registration Form]</a>
-</div>
-<div id="main" style="text-align: center">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Yücel Terlemezoğlu</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Personal Info</a></li>
+            <li><a href="gallery.html">Picture Gallery</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="hobbies.html">My Hobbies</a></li>
+            <li class="active"><a href="family.html">Family Tree</a></li>
+            <li><a href="hometown.html">Hometown</a></li>
+            <li><a href="social.html">Soial Media</a></li>
+            <li><a href="registration.html">Registration Form</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="well" style="text-align: center">
     <h1>My Family</h1>
     <img src="assets/img/family/family.jpg" alt="Family Picture" border="10px" style="width:75%;height:75%;"><br>
-    <table style="width:100%">
-        <tr>
-            <th>My Father</th>
-            <th>My Mother</th>
-            <th>My Brother</th>
-        </tr>
-        <tr>
-            <td>His name is Mehmet and he is 50 years old. He is Sergeant Major	at TAF.</td>
-            <td>Her name is Nuray and she is 48 years old. She is housewife.</td>
-            <td>His name is Yüksel and he is 13 years old. He is student.</td>
-        </tr>
-        <tr>
-            <td><img src="assets/img/family/father.jpg" alt="Father Picture" border="10px" style="width:50%;height:50%;"></td>
-            <td><img src="assets/img/family/mother.jpg" alt="Mother Picture" border="10px" style="width:50%;height:50%;"></td>
-            <td><img src="assets/img/family/brother.jpg" alt="Brother Picture" border="10px" style="width:50%;height:50%;"></td>
-        </tr>
-    </table>
 </div>
+<div class="well">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" style="text-align: center">
+                <h3><b>My Father</b></h3>
+                <p>His name is Mehmet and he is 50 years old. He is Sergeant Major at TAF.</p>
+                <img src="assets/img/family/father.jpg" style="width:50%;height:50%;">
+            </div>
+            <div class="col-sm-4" style="text-align: center">
+                <h3><b>My Mother</b></h3>
+                <p>Her name is Nuray and she is 48 years old. She is housewife.</p>
+                <img src="assets/img/family/mother.jpg" style="width:50%;height:50%;">
+            </div>
+            <div class="col-sm-4" style="text-align: center">
+                <h3><b>My Brother</b></h3>
+                <p>His name is Yüksel and he is 13 years old. He is student.</p>
+                <img src="assets/img/family/brother.jpg" style="width:50%;height:50%;">
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
