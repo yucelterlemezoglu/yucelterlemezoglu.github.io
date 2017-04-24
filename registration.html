@@ -24,148 +24,201 @@
     </div>
 </nav>
 <div class="container">
-    <form class="well" action=" " method="post">
-        <fieldset>
-            <legend><b>Personal Information</b></legend>
-            <img src="assets/img/form/user.jpg" alt="User Picture" style="width:100px;height:100px;"><br>
-            <form method="POST" action="uploadFile" enctype="multipart/form-data">
-                <strong>Upload file:</strong>
-                <input type="file" name="file"/>
-            </form>
-            <br>
-            <label><b> First Name: </b></label><input type="text" name="firstName"> <br>
-            <label><b>Middle Name: </b></label><input type="text" name="middleName"> <br>
-            <label><b>Last Name: </b></label><input type="text" name="lastName"> <br>
-            <label><b>Gender: </b></label>
-            <label class="radio-inline"><input type="radio" name="male">Male</label>
-            <label class="radio-inline"><input type="radio" name="female">Female</label>
-            <label class="radio-inline"><input type="radio" name="other">Other</label>
-            <input type="radio" name="gender" value="male" checked> Male
-            <input type="radio" name="gender" value="female"> Female
-            <input type="radio" name="gender" value="other"> Other<br>
-            <label><b>Date of Birthday: </b></label><input type="date" name="dateBirthday"> <br>
-            <label><b>City: </b></label>
-            <select class="checkbox"><b>City: </b>
-                <option value="adana">Adana</option>
-                <option value="adıyaman">Adıyaman</option>
-                <option value="afyonkarahisar">Afyonkarahisar</option>
-                <option value="ağrı">Ağrı</option>
-                <option value="amasya">Amasya</option>
-                <option value="ankara">Ankara</option>
-                <option value="antalya">Antalya</option>
-                <option value="artvin">Artvin</option>
-                <option value="aydın">Aydın</option>
-                <option value="balıkesir">Balıkesir</option>
-                <option value="bilecik">Bilecik</option>
-                <option value="bingöl">Bingöl</option>
-                <option value="bitlis">Bitlis</option>
-                <option value="bolu">Bolu</option>
-                <option value="burdur">Burdur</option>
-                <option value="bursa">Bursa</option>
-                <option value="çanakkale">Çanakkale</option>
-                <option value="çankırı">Çankırı</option>
-                <option value="çorum">Çorum</option>
-                <option value="denizli">Denizli</option>
-                <option value="diyarbakır">Diyarbakır</option>
-                <option value="edirne">Edirne</option>
-                <option value="elazığ">Elazığ</option>
-                <option value="erzincan">Erzincan</option>
-                <option value="erzurum">Erzurum</option>
-                <option value="eskişehir">Eskişehir</option>
-                <option value="gaziantep">Gaziantep</option>
-                <option value="giresun">Giresun</option>
-                <option value="gümüşhane">Gümüşhane</option>
-                <option value="hakkâri">Hakkâri</option>
-                <option value="hatay">Hatay</option>
-                <option value="ısparta">Isparta</option>
-                <option value="içel">İçel (Mersin)</option>
-                <option value="istanbul">İstanbul</option>
-                <option value="izmir">İzmir</option>
-                <option value="kars">Kars</option>
-                <option value="kastamonu">Kastamonu</option>
-                <option value="kayseri">Kayseri</option>
-                <option value="kırklareli">Kırklareli</option>
-                <option value="kırşehir">Kırşehir</option>
-                <option value="kocaeli">Kocaeli</option>
-                <option value="konya">Konya</option>
-                <option value="kütahya">Kütahya</option>
-                <option value="malatya">Malatya</option>
-                <option value="manisa">Manisa</option>
-                <option value="kahramanmaraş">Kahramanmaraş</option>
-                <option value="mardin">Mardin</option>
-                <option value="muğla">Muğla</option>
-                <option value="muş">Muş</option>
-                <option value="nevşehir">Nevşehir</option>
-                <option value="niğde">Niğde</option>
-                <option value="ordu">Ordu</option>
-                <option value="rize">Rize</option>
-                <option value="sakarya">Sakarya</option>
-                <option value="samsun">Samsun</option>
-                <option value="siirt">Siirt</option>
-                <option value="sinop">Sinop</option>
-                <option value="sivas">Sivas</option>
-                <option value="tekirdağ">Tekirdağ</option>
-                <option value="tokat">Tokat</option>
-                <option value="trabzon">Trabzon</option>
-                <option value="tunceli">Tunceli</option>
-                <option value="şanlıurfa">Şanlıurfa</option>
-                <option value="uşak">Uşak</option>
-                <option value="van">Van</option>
-                <option value="yozgat">Yozgat</option>
-                <option value="zonguldak">Zonguldak</option>
-                <option value="aksaray">Aksaray</option>
-                <option value="bayburt">Bayburt</option>
-                <option value="karaman">Karaman</option>
-                <option value="kırıkkale">Kırıkkale</option>
-                <option value="natman">Batman</option>
-                <option value="şırnak">Şırnak</option>
-                <option value="bartın">Bartın</option>
-                <option value="ardahan">Ardahan</option>
-                <option value="ığdır">Iğdır</option>
-                <option value="yalova">Yalova</option>
-                <option value="karabük">Karabük</option>
-                <option value="kilis">Kilis</option>
-                <option value="osmaniye">Osmaniye</option>
-                <option value="düzce">Düzce</option>
-            </select><br>
-            <div class="form-group">
-                <label for="aboutme">About me:</label>
-                <textarea class="form-control" rows="5" id="aboutme"></textarea>
-            </div>
-        </fieldset>
-    </form>
-    <form class="well" action=" " method="post">
-        <fieldset>
-            <legend><b>Interest</b></legend>
-            <input type="checkbox" name="interest"> Travel
-            <input type="checkbox" name="interest"> Baking
-            <input type="checkbox" name="interest"> Sports
-            <input type="checkbox" name="interest"> Playing Video games
-            <input type="checkbox" name="interest"> Online shopping
-            <input type="checkbox" name="interest"> Photography
-            <input type="checkbox" name="interest"> Arts and crafts
-            <input type="checkbox" name="interest"> Social networking
-            <input type="checkbox" name="interest"> Tinkering with Technology
-            <input type="checkbox" name="interest"> Sewing
-        </fieldset>
-    </form>
-    <form class="well" action=" " method="post">
-        <div class="input-group">
+    <div class="well">
+        <form>
             <fieldset>
-                <legend><b>Account Information</b></legend>
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                <legend><b>Personal Information</b></legend>
+                <img src="assets/img/form/user.jpg" class="img-rounded" alt="User Picture"
+                     style="width:100px;height:100px;"><br>
+                <form method="POST" action="uploadFile" enctype="multipart/form-data">
+                    <strong>Upload file:</strong>
+                    <input type="file" name="file"/>
+                </form>
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="middleName">Middle Name:</label>
+                        <input type="text" class="form-control" id="middleName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                </form>
+                <div class="radio">
+                    <p><b>Gender:</b></p>
+                    <form>
+                        <label>
+                            <input type="radio" name="gender" value="male" checked>
+                        </label> Male
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                        </label> Female
+                        <label>
+                            <input type="radio" name="gender" value="other">
+                        </label> Other
+                    </form>
                 </div>
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+
+
+
+                <label><b>Date of Birthday: </b></label><br><input type="date" name="dateBirthday"> <br>
+
+
+                <div class="form-group">
+                    <label for="sel1"><b>City:</b></label>
+                    <select class="form-control" id="sel1">
+                        <option value="adana">Adana</option>
+                        <option value="adıyaman">Adıyaman</option>
+                        <option value="afyonkarahisar">Afyonkarahisar</option>
+                        <option value="ağrı">Ağrı</option>
+                        <option value="amasya">Amasya</option>
+                        <option value="ankara">Ankara</option>
+                        <option value="antalya">Antalya</option>
+                        <option value="artvin">Artvin</option>
+                        <option value="aydın">Aydın</option>
+                        <option value="balıkesir">Balıkesir</option>
+                        <option value="bilecik">Bilecik</option>
+                        <option value="bingöl">Bingöl</option>
+                        <option value="bitlis">Bitlis</option>
+                        <option value="bolu">Bolu</option>
+                        <option value="burdur">Burdur</option>
+                        <option value="bursa">Bursa</option>
+                        <option value="çanakkale">Çanakkale</option>
+                        <option value="çankırı">Çankırı</option>
+                        <option value="çorum">Çorum</option>
+                        <option value="denizli">Denizli</option>
+                        <option value="diyarbakır">Diyarbakır</option>
+                        <option value="edirne">Edirne</option>
+                        <option value="elazığ">Elazığ</option>
+                        <option value="erzincan">Erzincan</option>
+                        <option value="erzurum">Erzurum</option>
+                        <option value="eskişehir">Eskişehir</option>
+                        <option value="gaziantep">Gaziantep</option>
+                        <option value="giresun">Giresun</option>
+                        <option value="gümüşhane">Gümüşhane</option>
+                        <option value="hakkâri">Hakkâri</option>
+                        <option value="hatay">Hatay</option>
+                        <option value="ısparta">Isparta</option>
+                        <option value="içel">İçel (Mersin)</option>
+                        <option value="istanbul">İstanbul</option>
+                        <option value="izmir">İzmir</option>
+                        <option value="kars">Kars</option>
+                        <option value="kastamonu">Kastamonu</option>
+                        <option value="kayseri">Kayseri</option>
+                        <option value="kırklareli">Kırklareli</option>
+                        <option value="kırşehir">Kırşehir</option>
+                        <option value="kocaeli">Kocaeli</option>
+                        <option value="konya">Konya</option>
+                        <option value="kütahya">Kütahya</option>
+                        <option value="malatya">Malatya</option>
+                        <option value="manisa">Manisa</option>
+                        <option value="kahramanmaraş">Kahramanmaraş</option>
+                        <option value="mardin">Mardin</option>
+                        <option value="muğla">Muğla</option>
+                        <option value="muş">Muş</option>
+                        <option value="nevşehir">Nevşehir</option>
+                        <option value="niğde">Niğde</option>
+                        <option value="ordu">Ordu</option>
+                        <option value="rize">Rize</option>
+                        <option value="sakarya">Sakarya</option>
+                        <option value="samsun">Samsun</option>
+                        <option value="siirt">Siirt</option>
+                        <option value="sinop">Sinop</option>
+                        <option value="sivas">Sivas</option>
+                        <option value="tekirdağ">Tekirdağ</option>
+                        <option value="tokat">Tokat</option>
+                        <option value="trabzon">Trabzon</option>
+                        <option value="tunceli">Tunceli</option>
+                        <option value="şanlıurfa">Şanlıurfa</option>
+                        <option value="uşak">Uşak</option>
+                        <option value="van">Van</option>
+                        <option value="yozgat">Yozgat</option>
+                        <option value="zonguldak">Zonguldak</option>
+                        <option value="aksaray">Aksaray</option>
+                        <option value="bayburt">Bayburt</option>
+                        <option value="karaman">Karaman</option>
+                        <option value="kırıkkale">Kırıkkale</option>
+                        <option value="natman">Batman</option>
+                        <option value="şırnak">Şırnak</option>
+                        <option value="bartın">Bartın</option>
+                        <option value="ardahan">Ardahan</option>
+                        <option value="ığdır">Iğdır</option>
+                        <option value="yalova">Yalova</option>
+                        <option value="karabük">Karabük</option>
+                        <option value="kilis">Kilis</option>
+                        <option value="osmaniye">Osmaniye</option>
+                        <option value="düzce">Düzce</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="aboutme">About me:</label>
+                    <textarea class="form-control" rows="5" id="aboutme"></textarea>
                 </div>
             </fieldset>
-        </div>
-        <br>
-        <input type="submit" onclick="alert('Thanks for registration')">
-    </form>
+        </form>
+    </div>
+    <div class="well">
+        <form>
+            <fieldset>
+                <legend><b>Interest</b></legend>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="interest"> Travel
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="interest"> Baking
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="interest"> Sports
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="interest"> Playing Video games
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="interest"> Online shopping
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="interest"> Photography
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="interest"> Arts and crafts
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="interest"> Social networking
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="interest"> Tinkering with Technology
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="interest"> Sewing
+                </label>
+            </fieldset>
+        </form>
+    </div>
+    <div class="well">
+        <form>
+            <div class="input-group">
+                <fieldset>
+                    <legend><b>Account Information</b></legend>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password"
+                               placeholder="Password">
+                    </div>
+                </fieldset>
+            </div>
+            <br>
+            <input type="submit" class="btn btn-info" onclick="alert('Thanks for registration')">
+        </form>
+    </div>
 </div>
 </body>
 </html>
